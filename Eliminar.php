@@ -2,7 +2,7 @@
 	$servidor="localhost";
 	$usuario="root";
 	$clave="";
-	$baseDeDatos="paginaTech";
+	$baseDeDatos="Technovision";
 
 	$enlace = mysqli_connect($servidor, $usuario, $clave, $baseDeDatos);
 
@@ -23,7 +23,7 @@
 		
 
 <form action="#" class="formulario" id="formulario" name="formulario" method="POST">
-		<h1>ELIMINACION DE USUARIO POR ID</h1>
+		<h1>ELIMINACION DE USUARIO </h1>
 
 	
 	<input  id="Nom" type="text" name="id" placeholder="ingrese el ID a eliminar">
@@ -40,10 +40,10 @@
 
 
 if(isset ($_POST['name'])){
-$user= $_POST['id'];
+$usuario= $_POST['user_usuario'];
 
 
-$insertarDatos = ("DELETE FROM datos WHERE id = $user");
+$insertarDatos = ("DELETE FROM usuarios WHERE user_usuario = $usuario");
 echo "Eliminado correctamente";
 
 $ejecutarInsertar = mysqli_query($enlace, $insertarDatos);

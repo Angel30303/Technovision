@@ -2,7 +2,7 @@
 	$servidor="localhost";
 	$usuario="root";
 	$clave="";
-	$baseDeDatos="paginaTech";
+	$baseDeDatos="Technovison";
 
 	$enlace = mysqli_connect($servidor, $usuario, $clave, $baseDeDatos);
 
@@ -16,38 +16,32 @@
         <meta charset="utf-8"> 
         <title>Formulario De Actualizacion</title>
        <link rel="stylesheet" href="estilo.css">
+       <link rel="stylesheet" href="Css/diseñoredes.css">
     </head>
     <body>
-    	
+    	<div id="bg"></div>
+      <div id="overlay"></div>
+      <div id="main">
 
-  
+  		</div>
+  		<header id="header">
 	<div class="contenedor">
 		<form action="#" class="formulario" id="formulario" name="formulario" method="POST">
 		<div class="input-contenedor">
-			<h1>Actualizacion</h1>
-
-					<input id="Nom" type="text" name="nombre" placeholder="Nombre">
-		</div>
-				<div class="input-contenedor">
-					<input id="user" type="text" name="usuario" placeholder="usuario">
+			<h1>ACTUALIZACION</h1>
+			<div class="input-contenedor">
+					<input id="user" type="text" pattern="[A-Za-z0-9]{1,15}" name="user_usuario" placeholder="Usuario">
 				</div>
+				
 				<div class="input-contenedor">
-					<input id="mail"  type="text" name="correo" placeholder="Correo">
+					<input id="Con" type="text" name="user_contraseña" placeholder="Contraseña">
 				</div>
+				
+				
 				<div class="input-contenedor">
-					<input id="pss" type="password" name="contraseña" placeholder="contraseña">
+					<input type="text" name="user_telefono" maxlength="8" minlength="8" placeholder="Telefono">
 				</div>
-				<div class="input-contenedor">
-					<input id="cpss" type="password" name="ccontraseña" placeholder="confirmar_contraseña">
-				</div>
-				<div class="input-contenedor">
-					<input id="cpss" type="text" name="id" placeholder="id">
-				</div>
-			
-				<div class="input-contenedor">
-					<input id="nom" type="num" maxlength="10" minlength="10"  name="telefono" placeholder="Telefono">
-				</div>
-		
+				
 
 
 			<input  id="registro" type="submit" class="btn" name="Actualizarce" value="Actualizar">
@@ -57,19 +51,21 @@
 		
 	</div>
 	
+</div>
+</header>
 </body>
 </html>
 <?php
 if (isset($_POST['Actualizarce'])){
-$usuario = $_POST['usuario'];
-$nombre = $_POST['nombre'];
-$correo = $_POST["correo"];
-$contraseña = $_POST["contraseña"];
-$id=$_POST["id"];
+$usuario = $_POST['user_usuario'];
+$contraseña = $_POST['user_contraseña'];
+$telefono = $_POST["user_telefono"];
 
 
 
-$insertarDatos="UPDATE datos SET nombre='$nombre',correo='$correo',contraseña='$contraseña', usuario='$usuario'where id='$id'";
+
+
+$insertarDatos="UPDATE usuarios SET  user_contraseña='$contraseña', user_telefono='$telefono'where user_usuario='$usuario'";
 echo "El registro se modifico correctamente ";
 
 

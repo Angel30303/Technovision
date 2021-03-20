@@ -2,7 +2,7 @@
 	$servidor="localhost";
 	$usuario="root";
 	$clave="";
-	$baseDeDatos="technovision";
+	$baseDeDatos="Technovision";
 
 	$enlace = mysqli_connect($servidor, $usuario, $clave, $baseDeDatos);
 

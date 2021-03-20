@@ -2,7 +2,7 @@
 	$servidor="localhost";
 	$usuario="root";
 	$clave="";
-	$baseDeDatos="paginatech";	
+	$baseDeDatos="Technovision";	
 
 	$enlace = mysqli_connect($servidor, $usuario, $clave, $baseDeDatos);
 
@@ -30,7 +30,7 @@
 		<form action="#" class="formulario" id="formulario" name="formulario" method="POST">
 		<div class="input-contenedor">
         <h1>Busqueda</h1>
-					<input id="Nom" type="text" name="id" placeholder="Ingrese el ID que desea consultar">
+					<input id="Nom" type="text" name="id" placeholder="Ingrese el Usuario que desea consultar">
         </div>
 		
 			
@@ -41,16 +41,16 @@
 
             <table class="tabla" >
                 <tr >
-                    <th>nombre</th>
-                    <th>usuario</th>
-                    <th>Correo</th>
-                    <th>id</th>
+                    <th>nombre</th><tr></tr>
+                    <th>usuario</th><tr></tr>
+                    <th>Correo</th><tr></tr>
+                    <th>id</th><tr></tr>
                 </tr>
                     <?php
 
                     if (isset($_POST['buscar'])){
-                    	$id = $_POST['id'];
-                        $consulta = "SELECT * FROM datos WHERE id=$id";
+                    	$usuario = $_POST['user_usuario'];
+                        $consulta = "SELECT * FROM usuarios WHERE user_usuario=$usuario";
 
                         $ejecutarConsulta = mysqli_query($enlace, $consulta);
                         $verFilas = mysqli_num_rows($ejecutarConsulta);

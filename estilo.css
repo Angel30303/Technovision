@@ -6,17 +6,19 @@ body {
 }
 * {
     box-sizing: border-box;
+
 }
 .contenedor{
     width: 100%;
     padding:400px;
+
 
    
 
 }
 .formulario{
     background: #fff;
-    margin-top: 150px;
+    margin-top: -300px;
     padding: 3px;
     align-content: center;
     background-color: rgba(0,0,0,0.4); 

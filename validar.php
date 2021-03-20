@@ -18,12 +18,21 @@
   <meta charset="UTF-8">
   <title>Technovision</title> 
   <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="Css/estilos.css">
+    <link rel="stylesheet" href="Css/diseñoredes.css">
+    <link rel="stylesheet" href="estilo.css">
 
 
 </head>
 <body>
-    <form class="formulario">
+  <div id="wrapper">
+      <div id="bg"></div>
+      <div id="overlay"></div>
+      <div id="main">
+    
+  </div>
+
+
+  <form class="formulario">
 
     <h1>BIENVENIDO</h1>
      <div class="contenedor">
@@ -40,6 +49,7 @@
                <input  id="registro" type="submit" class="btn" name="login" value="Registrate">
         </div>
     </form>
+</div>
 </body>
 </html>
 

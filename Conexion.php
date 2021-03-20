@@ -3,7 +3,7 @@
 $usuario = "root";
 $contrasena = "";
 $servidor = "localhost";
-$database = "paginaTech";
+$database = "Technovision";
 
 $con = mysqli_connect($servidor,$usuario,$contrasena);
 

@@ -33,7 +33,7 @@
 		<h1>ELIMINACION DE USUARIO </h1>
 
 	
-	<input  id="Nom" type="text" name="user_usuario" placeholder="ingrese el ID a eliminar">
+	<input  id="Nom" type="text" name="fun_id" placeholder="ingrese el ID a eliminar">
 	<input type="submit" name="eliminar"  class="btn" value="Eliminar">
 
 
@@ -49,20 +49,18 @@
 
 
 if(isset ($_POST['eliminar'])){
-$user_usuario= $_POST['user_usuario'];
+$fun_id= $_POST['fun_id'];
 
 
-$insertarDatos = ("DELETE FROM usuarios WHERE user_usuario = $user_usuario");
+$insertarDatos = ("DELETE FROM fundaciones WHERE fun_id = $fun_id");
 echo "Eliminado correctamente";
 
 $ejecutarInsertar = mysqli_query($enlace, $insertarDatos);
 
-		if($ejecutarInsertar){
-			echo"<script>alert('Registro Eliminado'); </script>";
-		}else{
-			echo"Error En la linea de sql";
-		}
-	}
+        if(!$ejecutarInsertar){
+            echo"Error En la linea de sql";
+        }
+    }
 
 
 

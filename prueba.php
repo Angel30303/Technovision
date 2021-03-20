@@ -30,7 +30,7 @@
 		<form action="#" class="formulario" id="formulario" method="POST" name="formulario" >
 		<div class="input-contenedor">
         <h1>Busqueda</h1>
-					<input id="Nom" type="text" name="user_usuario" placeholder="Ingrese el Usuario que desea consultar">
+					<input id="Nom" type="text" name="fun_id" placeholder="Ingrese el Usuario que desea consultar">
         </div>
 		
 			
@@ -45,16 +45,17 @@
 
             <table class="input-contenedor" >
                 <tr >
+                    <th>usuario</th><tr></tr>
                     <th>nombre</th><tr></tr>
                     <th>correo</th><tr></tr>
-                    <th>usuario</th><tr></tr>
+                    
               
                 </tr>
                     <?php
 
                     if (isset($_POST['buscar'])){
-                    	$user_usuario = $_POST['user_usuario'];
-                        $consulta = "SELECT * FROM usuarios WHERE user_usuario=$user_usuario";
+                    	$fun_di = $_POST['fun_id'];
+                        $consulta = "SELECT * FROM fundaciones WHERE fun_id=$fun_di";
 
                        $ejecutarConsulta = mysqli_query($enlace, $consulta);
                         $verFilas = mysqli_num_rows($ejecutarConsulta);

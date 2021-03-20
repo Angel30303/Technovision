@@ -1,15 +1,15 @@
- <?php
+<?php
 
-	$servidor="localhost";
-	$usuario="root";
-	$clave="";
-	$baseDeDatos="Technovision";
+    $servidor="localhost";
+    $usuario="root";
+    $clave="";
+    $baseDeDatos="paginatech";
 
-	$enlace = mysqli_connect($servidor, $usuario, $clave, $baseDeDatos);
+    $enlace = mysqli_connect($servidor, $usuario, $clave, $baseDeDatos);
 
-	if(!$enlace){
-		echo"Error en la conexion con el servidor";
-	}
+    if(!$enlace){
+        echo"Error en la conexion con el servidor";
+    }
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +21,7 @@
   <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
     <link rel="stylesheet" href="Css/diseñoredes.css">
     <link rel="stylesheet" href="estilo.css">
-
+    <link rel="stylesheet" href="Css/diseñoredes.css">
 
 </head>
 <body>
@@ -29,42 +29,43 @@
       <div id="bg"></div>
       <div id="overlay"></div>
       <div id="main">
-    
-  </div>
+
+ 
 
 <header id="header">
-  
+
   <form class="formulario">
 
     <h1>BIENVENIDO</h1>
      <div class="contenedor">
-
+<h1>LOGIN</h1>
      <div class="input-contenedor">
-         <input type="text" name="user_usuario" placeholder="Usuario">
+         <input type="text" placeholder="Usuario">
      </div>
 
 
 
          <div class="input-contenedor">
-            <input type="password" name="user_contraseña" placeholder="Contraseña">
+            <input type="password" placeholder="Contraseña">
          </div>
                <input  id="registro" type="submit" class="btn" name="login" value="Registrate">
         </div>
     </form>
     </header>
   </div>
+   </div>
 </body>
 </html>
 
    <?php
     if(isset($_POST['login'])){
-  $user_usuario = $_POST["user_usuario"];
-  $user_contraseña=$_POST["user_contraseña"];
+  $usuario = $_POST["usuario"];
+  $contraseña=$_POST["contraseña"];
 
-if ($user_usuario == "" ||$_POST['user_contraseña'] == null ) {
+if ($usuario == "" ||$_POST['contraseña'] == null ) {
 echo "fatan datos";
 } else{
-  $sql = "SELECT * FROM usuarios WHERE user_usuario = '$user_usuario' AND user_contraseña = '$user_contraseña'";
+  $sql = "SELECT * FROM datos WHERE usuario = '$usuario' AND contraseña = '$contraseña'";
   if (!$consulta = $conexion->query($sql)) {
    echo "error";
   }else{ 

@@ -27,37 +27,41 @@
 
     <header id="header">
 	<div class="contenedor">
-		<form action="#" class="formulario" id="formulario" name="formulario" method="POST">
+		<form action="#" class="formulario" id="formulario" method="POST" name="formulario" >
 		<div class="input-contenedor">
         <h1>Busqueda</h1>
-					<input id="Nom" type="text" name="id" placeholder="Ingrese el Usuario que desea consultar">
+					<input id="Nom" type="text" name="user_usuario" placeholder="Ingrese el Usuario que desea consultar">
         </div>
 		
 			
 			<input  id="registro" type="submit" class="btn" name="buscar" value="Buscar">
 		
-		
+</header>
 
+</body>
+</html>		
 
-            <table class="tabla" >
+<div class="formulario">
+
+            <table class="input-contenedor" >
                 <tr >
                     <th>nombre</th><tr></tr>
+                    <th>correo</th><tr></tr>
                     <th>usuario</th><tr></tr>
-                    <th>Correo</th><tr></tr>
-                    <th>id</th><tr></tr>
+              
                 </tr>
                     <?php
 
                     if (isset($_POST['buscar'])){
-                    	$usuario = $_POST['user_usuario'];
-                        $consulta = "SELECT * FROM usuarios WHERE user_usuario=$usuario";
+                    	$user_usuario = $_POST['user_usuario'];
+                        $consulta = "SELECT * FROM usuarios WHERE user_usuario=$user_usuario";
 
-                        $ejecutarConsulta = mysqli_query($enlace, $consulta);
+                       $ejecutarConsulta = mysqli_query($enlace, $consulta);
                         $verFilas = mysqli_num_rows($ejecutarConsulta);
                         $fila = mysqli_fetch_array($ejecutarConsulta);
 
                         if(!$ejecutarConsulta){
-                            echo"Error en la consulta usuario no encontrado";
+                            echo"Error en la consulta";
                         }else{
                             if($verFilas<1){
                                 echo"Error sin registros asociados a ese ID";
@@ -69,7 +73,7 @@
                                             <td>'.$fila[1].'</td>
                                             <td>'.$fila[2].'</td>
                                             
-                                            <td>'.$fila[5].'</td>
+                                         
                                         </tr>
                                     ';
                                     $fila = mysqli_fetch_array($ejecutarConsulta);
@@ -82,9 +86,5 @@
 }
                     ?>
 
-<a class="link" href="pagina.php">Volver</a>
 
-</header>
-</div>
-</body>
-</html>
+

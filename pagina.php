@@ -20,7 +20,7 @@
 
     </head>
     <body>
-    	<div id="wrapper">
+  
       <div id="bg"></div>
       <div id="overlay"></div>
       <div id="main">

@@ -10,7 +10,7 @@ body {
 }
 .contenedor{
     width: 100%;
-    padding:400px;
+    padding:250px;
 
 
    
@@ -19,7 +19,7 @@ body {
 .formulario{
     background: #fff;
     margin-top: -300px;
-    padding: 3px;
+    padding: 70px;
     align-content: center;
     background-color: rgba(0,0,0,0.4); 
 }

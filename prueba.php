@@ -16,18 +16,22 @@
         <meta charset="utf-8"> 
         <title>Formulario De Registro</title>
        <link rel="stylesheet" href="estilo.css">
+       <link rel="stylesheet" href="css/diseñoredes.css" />
 
     </head>
     <body>
-    	
+    	<div id="wrapper">
+            <div id="bg"></div>
+            <div id="overlay"></div>
+            <div id="main">
 
-    
+    <header id="header">
 	<div class="contenedor">
 		<form action="#" class="formulario" id="formulario" name="formulario" method="POST">
 		<div class="input-contenedor">
-<h1>Busqueda</h1>
-					<input id="Nom" type="text" name="id" placeholder="Ingrese el ID que desea consultar"
-        </div>>
+        <h1>Busqueda</h1>
+					<input id="Nom" type="text" name="id" placeholder="Ingrese el ID que desea consultar">
+        </div>
 		
 			
 			<input  id="registro" type="submit" class="btn" name="buscar" value="Buscar">
@@ -79,5 +83,8 @@
                     ?>
 
 <a class="link" href="pagina.php">Volver</a>
+
+</header>
+</div>
 </body>
 </html>

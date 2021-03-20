@@ -213,10 +213,10 @@ input, select, textarea {
 		-webkit-animation: bg 60s linear infinite;
 		-ms-animation: bg 60s linear infinite;
 		animation: bg 60s linear infinite;
-		-moz-backface-visibility: visible;
-		-webkit-backface-visibility: visible;
-		-ms-backface-visibility: visible;
-		backface-visibility: visible;
+		-moz-backface-visibility: hidden;
+		-webkit-backface-visibility: hidden;
+		-ms-backface-visibility: hidden;
+		backface-visibility: hidden;
 		-moz-transform: translate3d(0,0,0);
 		-webkit-transform: translate3d(0,0,0);
 		-ms-transform: translate3d(0,0,0);

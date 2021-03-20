@@ -8,15 +8,9 @@ body {
     box-sizing: border-box;
 }
 .contenedor{
-    width: 100%;  
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  flex-wrap: wrap;
+    width: 100%;
+    padding:400px;
+
    
 
 }
@@ -64,11 +58,6 @@ font-size: 20px;
 
 .input-contenedor{
     margin-bottom: 20px;
-    width: 520px;
-  min-height: 100vh;
-  background: #fff;
-  border-radius: 2px;
-  position: relative;
 
 }
 .registro{
@@ -95,41 +84,6 @@ a{
    width: 90%;
    text-align: center;
 }
-
-
-
-
-@media(min-width:768px)
-{
-    .formulario{
-        margin: auto;
-        width: 500px;
-        margin-top: 150px;
-        border-radius: 2%;
-    }
-}
-
-.tabla{
-
-float: center;
-  font-size: 20px;
-  border: 1px;
-  border-style: solid;
-  border-color: black;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 20px;
-  height: 120px;
-  width: 300px;
-   color: gray;
-}
-
-
-
-
-
-
-
 
 
 

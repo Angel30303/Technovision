@@ -227,7 +227,7 @@ input, select, textarea {
 		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;
-		opacity: 1;
+		opacity: 0.4;
 		position: fixed;
 		top: 0;
 	}
@@ -349,7 +349,7 @@ input, select, textarea {
 		-ms-animation: overlay 1.5s 1.5s forwards;
 		animation: overlay 1.5s 1.5s forwards;
 		background-attachment: fixed, fixed;
-		background-image: url("../img2/overlay-pattern.png"), url("../img2/overlay.svg");
+		/*background-image: url("../img2/overlay-pattern.png"), url("../img2/overlay.svg");*/
 		background-position: top left, center center;
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;

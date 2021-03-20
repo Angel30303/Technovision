@@ -1,6 +1,6 @@
 body {
    margin: 0;
-   background: url('Img/salon.jpg');
+   /*background: url('Img/salon.jpg');*/
     background-size: cover;
     background-attachment: fixed;
 }

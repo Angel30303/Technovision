@@ -1,0 +1,240 @@
+*{
+box-sizing:border-box;
+margin:100;
+padding:100;
+
+}
+
+.borde {
+	border:0px solid purple;
+}
+
+.titulo{
+width:100%;
+	height:40px;
+	padding:5px;
+	background-color:black;
+	font-family:'Chasy ', cursive;
+	color:white; 
+	text-align:center;
+	font-size:25px;
+
+}
+.contenedor{
+width:100%;
+	max-width:1280px;
+	margin:auto; 
+}
+
+
+body{
+
+
+	background-image: url('../img/Fondo1.png');
+	background-size:100% 100%;
+	background-attachment: fixed;
+	font-family:'CheerScript',cursive ;
+}
+nav{
+
+	width:90%;
+	height:60px;
+	
+
+
+}	
+
+.logo{
+	width: 20%;
+	height: 20%;
+	float: left;
+	padding:14px;
+	text-align:center;
+	background-color: gray;
+	color: white;
+}
+
+.logo img{
+	
+	width:30px;
+	height:27px;
+	border-radius:50%;
+
+}
+
+.navagacion{
+width: 35%;
+	height:100%;
+	float:left;
+
+}
+
+nav ul{
+list-style:relative;
+text-align:center;
+}
+
+nav ul li{
+	/*display:inline-block;*/
+	width:160px;
+	background-color:black;
+	background: rgba(0,0,0,0.5);
+
+}
+
+
+nav ul li:hover> ul{
+	display:block;
+}
+
+nav .navegacion> ul >li{
+	/*width:130px;*/
+	display:inline-block;
+}
+
+nav ul li a{
+	display:block;
+	text-decoration:none;
+	color:white;
+	padding:16px 10px;
+	text-align:center;
+	border-bottom:2px solid #C1D4F2	;
+
+}
+
+nav ul li a:hover{
+	background:rgba(0,0,0,0.5);
+	border-bottom:10px solid rgb(0,0,0);
+
+
+}
+nav li ul{
+	position:absolute;
+	display:none;
+	
+}
+
+nav li ul li{
+	position:relative;
+}
+
+
+nav li ul li ul{
+	left:150px;
+	top:1px;
+}
+header{
+	width:100%;
+	height:0px;
+	/*depende del monitor*/
+	background-image:url('../img/fondo.jpg');
+	background-size:100% 100%;
+}
+main#Inicio{
+	width:100%;
+	height:500px;
+	background: rgba(0,0,0,0.5);
+}
+.div-porta{
+	width:100%;
+	height:100%;
+	
+	text-align:center;
+	color:#ffff ;
+	padding:50px;
+	font-size:20px;
+}
+.div-porta img{
+	width:150px;
+	height:150px;
+	margin:40px 0px 0px 0px;
+	border-radius:50%;
+}
+.div-porta p{
+	margin: 0px 0px 0px 0px;
+	text-align: justify;
+}
+main#Objetivo{
+	width:100%;
+	height:500px;
+background: rgba(0,0,0,0.5);
+color:white;
+}
+
+.div-porta1{
+	width:100%;
+	height:100%;
+	float: left;
+	text-align:center;
+	padding:50px;
+	font-size:20px;
+}
+.div-porta1 img{
+	width:150px;
+	height:150px;
+	margin:40px 0px 0px 0px;
+	border-radius:50%;
+}
+.div-porta1 p{
+	margin: 0px 0px 0px 0px;
+	text-align: justify;
+}
+
+section#quienes-somos{
+	width:100%;
+	height:450px;
+	background: rgba(0,0,0,0.5);
+	
+
+
+}
+.fila {
+	width:100%;
+	height:100%;
+	text-align:center;
+	color:white;
+	
+}	
+
+.fila img{
+	width:100px;
+	height:100px;
+	margin:50px 40px 30px 50px;
+	border-radius:40%;
+	float: center;
+
+}
+.col-ext{
+	width:33.33%;
+	height:100%;
+	float:left;
+}
+.col-cen{
+	width:33.33%;
+	height:100%;
+	float:left;
+}
+
+
+section#contactenos{
+	width:100%;
+	height:550px;
+}
+.div-contacto{
+	width:50%;
+	height:100%;
+	float:left;
+}
+.div-arr{
+	width:100%;	
+	height:70%;
+}
+.div-aba{
+	width:100%;
+	height:30%;
+}
+
+footer{
+	width:100%;
+	height:50px;
+}

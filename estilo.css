@@ -10,7 +10,7 @@ body {
 }
 .contenedor{
     width: 100%;
-    padding:250px;
+    padding:300px;
 
 
    
@@ -21,7 +21,7 @@ body {
     margin-top: -300px;
     padding: 70px;
     align-content: center;
-    background-color: rgba(0,0,0,0.4); 
+    background-color: rgba(0,0,0,0.3); 
 }
 h1{
     text-align: center;

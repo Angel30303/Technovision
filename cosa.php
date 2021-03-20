@@ -20,10 +20,10 @@ require 'Config.php';
      <div class="contenedor">
 
      <div class="input-contenedor">
-         <input type="text" name="name" placeholder="Usuario">
+         <input type="text" name="user_usuario" placeholder="Usuario">
      </div>
          <div class="input-contenedor">
-            <input type="password" name="contrasena" placeholder="Contraseña">
+            <input type="password" name="user_contrasena" placeholder="Contraseña">
          </div>
                <input  id="registro" type="submit" class="btn" name="login" value="Registrate">
         </div>

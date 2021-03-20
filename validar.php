@@ -3,7 +3,7 @@
 	$servidor="localhost";
 	$usuario="root";
 	$clave="";
-	$baseDeDatos="paginatech";
+	$baseDeDatos="Technovision";
 
 	$enlace = mysqli_connect($servidor, $usuario, $clave, $baseDeDatos);
 
@@ -40,13 +40,13 @@
      <div class="contenedor">
 
      <div class="input-contenedor">
-         <input type="text" placeholder="Usuario">
+         <input type="text" name="user_usuario" placeholder="Usuario">
      </div>
 
 
 
          <div class="input-contenedor">
-            <input type="password" placeholder="Contraseña">
+            <input type="password" name="user_contraseña" placeholder="Contraseña">
          </div>
                <input  id="registro" type="submit" class="btn" name="login" value="Registrate">
         </div>
@@ -58,13 +58,13 @@
 
    <?php
     if(isset($_POST['login'])){
-  $usuario = $_POST["usuario"];
-  $contraseña=$_POST["contraseña"];
+  $user_usuario = $_POST["user_usuario"];
+  $user_contraseña=$_POST["user_contraseña"];
 
-if ($usuario == "" ||$_POST['contraseña'] == null ) {
+if ($user_usuario == "" ||$_POST['user_contraseña'] == null ) {
 echo "fatan datos";
 } else{
-  $sql = "SELECT * FROM datos WHERE usuario = '$usuario' AND contraseña = '$contraseña'";
+  $sql = "SELECT * FROM usuarios WHERE user_usuario = '$user_usuario' AND user_contraseña = '$user_contraseña'";
   if (!$consulta = $conexion->query($sql)) {
    echo "error";
   }else{ 

@@ -49,10 +49,10 @@
 
 
 if(isset ($_POST['eliminar'])){
-$usuario= $_POST['user_usuario'];
+$user_usuario= $_POST['user_usuario'];
 
 
-$insertarDatos = ("DELETE FROM usuarios WHERE user_usuario = $usuario");
+$insertarDatos = ("DELETE FROM usuarios WHERE user_usuario = $user_usuario");
 echo "Eliminado correctamente";
 
 $ejecutarInsertar = mysqli_query($enlace, $insertarDatos);

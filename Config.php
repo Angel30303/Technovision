@@ -8,10 +8,10 @@ session_start();
 
 if(isset($_POST['login'])){
 
-    $username = $_POST['name'];
-    $contrasena = $_POST['contrasena'];
+    $user_usuario = $_POST['user_usuario'];
+    $contrasena = $_POST['user_contrasena'];
     
-    if (ValidarUsuario($username) == true) {
+    if (ValidarUsuario($user_usuario) == true) {
     	echo "<script>alert('GG')</script>";
         header("location:PruebaSesion.php");
     }else{
@@ -24,8 +24,8 @@ if(isset($_POST['login'])){
 function ValidarUsuario($username){
     require 'Conexion.php';
 
-    global $contrasena;
-    $query_usuario = "SELECT COUNT(*) As Cantidad,contrasena From datos WHERE usuario = '$username';";
+    global $user_contrasena;
+    $query_usuario = "SELECT COUNT(*) As Cantidad,contrasena From usuarios WHERE user_usuario= '$user_usuario';";
 
     $exe_usuario = mysqli_query($con,$query_usuario);
 
@@ -39,8 +39,8 @@ function ValidarUsuario($username){
    
    if ($resultados > 0) {
 
-        if ($contrasena == $pass) {
-        $_SESSION['Usuario'] = $username;
+        if ($user_contrasena == $pass) {
+        $_SESSION['Usuario'] = $user_usuario;
         // echo "Estoy en Verdadero";
         return true;
         }else{

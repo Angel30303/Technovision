@@ -16,11 +16,17 @@
         <meta charset="utf-8"> 
         <title>Formulario De Registro</title>
         <link rel="stylesheet" href="estilo.css">
+        <link rel="stylesheet" href="Css/diseñoredes.css">
 
     </head>
     <body>
-    	
-
+    	<div id="wrapper">
+      <div id="bg"></div>
+      <div id="overlay"></div>
+      <div id="main">
+    
+  </div>
+   	<header id="header">
     
 	<div class="contenedor">
 	
@@ -64,7 +70,9 @@
 		
 		
 	</div>
-	
+
+	</header>
+</div>
 </body>
 </html>
 <?´php error_reporting(1);?>

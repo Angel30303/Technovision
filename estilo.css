@@ -8,9 +8,15 @@ body {
     box-sizing: border-box;
 }
 .contenedor{
-    width: 100%;
-    padding:20px;
-
+    width: 100%;  
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  flex-wrap: wrap;
    
 
 }
@@ -58,6 +64,11 @@ font-size: 20px;
 
 .input-contenedor{
     margin-bottom: 20px;
+    width: 520px;
+  min-height: 100vh;
+  background: #fff;
+  border-radius: 2px;
+  position: relative;
 
 }
 .registro{

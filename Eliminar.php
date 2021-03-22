@@ -34,7 +34,11 @@
 
 	
 	<input  id="Nom" type="text" name="fun_id" placeholder="ingrese el ID a eliminar">
+<<<<<<< Updated upstream
 	<input type="submit" name="eliminar"  class="btn" value="Eliminar">
+=======
+	<input type="submit" name="name"  class="btn" value="Eliminar">
+>>>>>>> Stashed changes
 
 
 	<a class="link" href="pagina.php">Volver</a>
@@ -48,7 +52,11 @@
 <?php 
 
 
+<<<<<<< Updated upstream
 if(isset ($_POST['eliminar'])){
+=======
+if(isset ($_POST['name'])){
+>>>>>>> Stashed changes
 $fun_id= $_POST['fun_id'];
 
 

@@ -29,7 +29,11 @@
       <div id="bg"></div>
       <div id="overlay"></div>
       <div id="main">
+<<<<<<< Updated upstream
 
+=======
+    
+>>>>>>> Stashed changes
  
 
 <header id="header">

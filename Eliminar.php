@@ -15,7 +15,7 @@
 <head>
 	<title>Eliminar</title>
 	<link rel="stylesheet" href="estilo.css">
-	<link rel="stylesheet" href="Css/diseñoredes.css">
+	<link rel="stylesheet" href="Css/disenoredes.css">
 </head>
 <body>
 	
@@ -36,6 +36,7 @@
 	<input  id="Nom" type="text" name="fun_id" placeholder="ingrese el ID a eliminar">
 
 
+	
 	<input type="submit" name="name"  class="btn" value="Eliminar">
 
 

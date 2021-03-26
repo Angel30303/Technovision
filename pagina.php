@@ -16,7 +16,7 @@
         <meta charset="utf-8"> 
         <title>Formulario De Registro</title>
         <link rel="stylesheet" href="estilo.css">
-        <link rel="stylesheet" href="Css/diseñoredes.css">
+        <link rel="stylesheet" href="Css/disenoredes.css">
 
     </head>
     <body>
@@ -70,7 +70,7 @@
 		
 		
 	</div>
-
+</form>
 	</header>
 </div>
 </body>

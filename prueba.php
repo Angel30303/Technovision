@@ -16,7 +16,7 @@
         <meta charset="utf-8"> 
         <title>Formulario De Registro</title>
        <link rel="stylesheet" href="estilo.css">
-       <link rel="stylesheet" href="css/diseñoredes.css" />
+       <link rel="stylesheet" href="css/disenoredes.css" />
 
     </head>
     <body>
@@ -35,8 +35,15 @@
 		
 			
 			<input  id="registro" type="submit" class="btn" name="buscar" value="Buscar">
-		
+            
+            <a class="link" href="pagina.php">Volver</a>
+
+
+</div>
+    </div>
+</div>
 </header>
+
 
 </body>
 </html>		

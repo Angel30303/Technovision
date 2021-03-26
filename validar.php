@@ -3,7 +3,7 @@
     $servidor="localhost";
     $usuario="root";
     $clave="";
-    $baseDeDatos="paginatech";
+    $baseDeDatos="Technovision";
 
     $enlace = mysqli_connect($servidor, $usuario, $clave, $baseDeDatos);
 
@@ -21,7 +21,7 @@
   <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
     <link rel="stylesheet" href="Css/diseñoredes.css">
     <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="Css/diseñoredes.css">
+
 
 </head>
 <body>
@@ -29,12 +29,6 @@
       <div id="bg"></div>
       <div id="overlay"></div>
       <div id="main">
-<<<<<<< Updated upstream
-
-=======
-    
->>>>>>> Stashed changes
- 
 
 <header id="header">
 

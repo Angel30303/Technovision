@@ -19,7 +19,7 @@
   <title>Technovision</title> 
 
   <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="Css/diseñoredes.css">
+    <link rel="stylesheet" href="Css/disenoredes.css">
     <link rel="stylesheet" href="estilo.css">
 
 

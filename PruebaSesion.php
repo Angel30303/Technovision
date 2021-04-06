@@ -6,7 +6,7 @@ require 'Sesion.php';
        $_SESSION["Usuario"];
     }
     else{
-        header("location:index.html");
+        header("location:../PerfilAdministrador/adminhistorial.php");
     }
 ?>
 
